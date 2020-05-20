@@ -23,16 +23,15 @@ public class Exercice20 {
         }
         pos = 0;
 	max = 0;
-        
         for(i=0;i<9;i++) {
             for(j=i+1;j<=9;j++) {
-                if(tab[i]>tab[j]) {
-                    pos =j;
+                if(tab[i]>tab[j-1]) {
+                    pos =i+1;
                     max = tab[i];
                 }
                                
             }
-            j = 9;
+           
         }
         System.out.println("le plus grand de ces 10 nombres est "+ max+ " et il est la position "+pos);
 	
